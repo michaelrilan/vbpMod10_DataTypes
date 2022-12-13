@@ -11,31 +11,39 @@
 
     Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles single_btn.Click
 
-        MsgBox("The Literal of Single Data Type is: " & single_val)
+
+        outs.Text = "The Literal of Single Data Type is: " & single_val
 
     End Sub
 
     Private Sub double_btn_CheckedChanged(sender As Object, e As EventArgs) Handles double_btn.Click
-        MsgBox("The Literal of Double Data Type is: " & double_val)
+
+        outs.Text = "The Literal of Double Data Type is: " & double_val
+
     End Sub
 
     Private Sub integer_btn_CheckedChanged(sender As Object, e As EventArgs) Handles integer_btn.Click
-        MsgBox("The Literal of Integer Data Type is: " & integer_val)
+
+        outs.Text = "The Literal of Integer Data Type is: " & integer_val
     End Sub
 
     Private Sub long_btn_CheckedChanged(sender As Object, e As EventArgs) Handles long_btn.Click
-        MsgBox("The Literal of Long Data Type is: " & long_val)
+
+        outs.Text = "The Literal of Long Data Type is: " & long_val
     End Sub
 
     Private Sub currency_btn_CheckedChanged(sender As Object, e As EventArgs) Handles currency_btn.Click
-        MsgBox("The Literal of Currency is: $" & currency_val)
+
+        outs.Text = "The Literal of Currency is: $ " & currency_val
     End Sub
 
     Private Sub string_btn_CheckedChanged(sender As Object, e As EventArgs) Handles string_btn.Click
-        MsgBox("The Literal of String Data Type is: " & string_val)
+
+        outs.Text = "The Literal of String Data Type is: '" & string_val & "'"
     End Sub
 
     Private Sub boolean_btn_CheckedChanged(sender As Object, e As EventArgs) Handles boolean_btn.Click
-        MsgBox("The Literal of Boolean Data Type is: " & boolean_val)
+
+        outs.Text = "The Literal of Boolean Data Type is: " & boolean_val
     End Sub
 End Class

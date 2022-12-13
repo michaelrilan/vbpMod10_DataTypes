@@ -30,6 +30,7 @@ Partial Class Form1
         Me.currency_btn = New System.Windows.Forms.RadioButton()
         Me.string_btn = New System.Windows.Forms.RadioButton()
         Me.boolean_btn = New System.Windows.Forms.RadioButton()
+        Me.outs = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -119,11 +120,21 @@ Partial Class Form1
         Me.boolean_btn.Text = "Boolean"
         Me.boolean_btn.UseVisualStyleBackColor = True
         '
+        'outs
+        '
+        Me.outs.AutoSize = True
+        Me.outs.Location = New System.Drawing.Point(23, 244)
+        Me.outs.Name = "outs"
+        Me.outs.Size = New System.Drawing.Size(10, 13)
+        Me.outs.TabIndex = 8
+        Me.outs.Text = ":"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(345, 331)
+        Me.Controls.Add(Me.outs)
         Me.Controls.Add(Me.boolean_btn)
         Me.Controls.Add(Me.string_btn)
         Me.Controls.Add(Me.currency_btn)
@@ -147,4 +158,5 @@ Partial Class Form1
     Friend WithEvents currency_btn As RadioButton
     Friend WithEvents string_btn As RadioButton
     Friend WithEvents boolean_btn As RadioButton
+    Friend WithEvents outs As Label
 End Class
